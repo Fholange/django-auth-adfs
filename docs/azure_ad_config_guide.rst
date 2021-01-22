@@ -7,8 +7,8 @@ itself, it might take some tries to get all settings right.
 This guide tries to give a basic overview of how to configure Azure AD and how to determine the settings for
 django-auth-adfs. Installing and configuring the basics of Azure AD is not explained here.
 
-
-Step 1 - Register an application
+.. _step-1:
+Step 1 - Register a backend application
 --------------------------------
 
 After signing in to `Azure <https://portal.azure.com>`_. Open the **Azure Active Directory** dashboard. 
@@ -138,3 +138,51 @@ Add this path to your projects ``urls.py`` file.
         path('oauth2/', include('django_auth_adfs.urls')),
         ...
     ] 
+    
+Step 3 - Register and configure an Azure AD frontend application
+--------------------------------------------------------
+Just like we did with our backend application in ::ref:`step-1`. We have to register a new app for your frontend. Here we need to set it to SPA and use your host/homepage as a callback uri.
+
+
+
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+
+.. image:: _static/2021/10_copy-frontend-client_id.png
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/11-navigate_to_expose_an_api.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
+.. image:: _static/2021/09_register_frontend_app.PNG
+    :scale: 50 %
+
+------------
