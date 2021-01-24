@@ -141,7 +141,8 @@ Add this path to your projects ``urls.py`` file.
     
 Step 3 - Register and configure an Azure AD frontend application
 --------------------------------------------------------
-Just like we did with our backend application in ::ref:`step-1`. We have to register a new app for your frontend. Here we need to set it to SPA and use your host/homepage as a callback uri.
+Just like we did with our backend application in step 1 We have to register a new app for our frontend. Here we need to set it to SPA and the redirect URI value must match with the domain where your frontend application is located(eg. http://localhost:3000).
+
 
 
 
@@ -202,7 +203,7 @@ Here you need to paste in your frontend application (client) id.
 
 ------------
 
-Now navigate back to app registrations. Click on your FRONTEND application and navigate to API permissions. Press **add a permisson**.
+Now navigate back to app registrations. Click on your **frontend** application and navigate to API permissions. Press **add a permisson**.
 
 
 .. image:: _static/2021/17_navigate_to_api_permissions.PNG
@@ -210,15 +211,15 @@ Now navigate back to app registrations. Click on your FRONTEND application and n
 
 ------------
 
-Then we have to press **My API's** and then select the backend application. This could be different if you don't have owner rights of the backend application.
+Then we have to press **My API's** and then select the backend application. (This could be different if you don't have owner rights of the backend application.)
 
 
 .. image:: _static/2021/18_add_permission.PNG
     :scale: 50 %
 
-------------
+------------k
 
-Here we can give our frontend the permission scope we created earlier in step #href XX. Press Delegated permissions (should be default) and select the permission you created and press **add permission**
+Here we can give our frontend the permission scope we created earlier. Press **Delegated permissions** (should be default) and select the permission you created and press **add permission**
 
 
 
